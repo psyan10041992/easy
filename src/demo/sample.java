@@ -16,6 +16,8 @@ WebDriver driver = new ChromeDriver();
 	src.sendKeys("psyan007@gmail.com");
 	WebElement desc = driver.findElement(By.id("pass"));
 	desc.sendKeys("12345789");
+	WebElement btn = driver.findElement(By.xpath("//input[@value='Log In']"));
+	btn.click();
 	
 
 }
